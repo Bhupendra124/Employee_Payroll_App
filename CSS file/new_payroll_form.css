@@ -1,27 +1,29 @@
 body {
-    margin: 10;
-    height: 60%;
+    margin: 0;
+    height: 100%;
     font-family: Roboto;
 }
 
 .header {
-    padding: 20px 0px;
+    padding: 15px 0px;
     background-color: #e6dede;
 }
 
 .header-content {
-    flex-direction: row;
-    align-items: center;
+
+flex-direction: row;
+   justify-content: center;
     display: flex;
-    border: 0px solid green;
+    border: 1px solid green;
     justify-content: center;
+    align-items: center;
 }
 
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
+    border: 1px solid green;
     width: 80%;
     cursor: pointer;
 }
@@ -41,4 +43,65 @@ body {
 
 .emp-payroll {
     color: #121b24;
+}
+.emp-payroll{
+    color: #42515f;
+}
+*{box-sizing: border-box;}
+
+.form-content{
+    min-height: calc(100%-80px);
+    background-color: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+.form-content {
+    min-height: calc(100%-80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+}
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.row-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 0px sold green;
+}
+.label {
+    min-width: 180px;
+}
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
