@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS file/new_payroll_form.css">
     <title>Employee payroll form</title>
 </head>
@@ -21,6 +20,8 @@
         </div>
     </div>
     </header>
+
+    <!-- uc 2 -->
     <div class="form-content">
         <form class="form" action="#" onsubmit="save();return false" >
             <div class="form-head">
@@ -31,6 +32,67 @@
                    
      </div>
 
+     <!-- uc 3 -->
+     <div class="row-content">
+        <label for="profile" class="label text">Profile Image</label>
+        <div class="profile-radio-content">
+            <label>
+                <input type="radio" id="profile1" name="profile"
+                    value="../assets/profile-images/Ellipse -10.png">
+                <img class="profile" id="image1" src="../assets/profile-images/pic4.png">
+            </label>
+            <label>
+                <input type="radio" id="profile2" name="profile"
+                    value="../assets/profile-images/Ellipse -2.png">
+                <img class="profile" id="image1" src="../assets/profile-images/pic1.png">
+            </label>
+            <label>
+                <input type="radio" id="profile3" name="profile"
+                    value="../assets/profile-images/Ellipse -1.png">
+                <img class="profile" id="image1" src="../assets/profile-images/pic2.png">
+            </label>
+            <label>
+                <input type="radio" id="profile4" name="profile"
+                    value="../assets/profile-images/Ellipse -3.png">
+                <img class="profile" id="image1" src="../assets/profile-images/img5.png">
+            </label>
+        </div>
+     </div>
+        <!-- uc 3 -->
+        <div class="row-content" style="margin-top: 50px;">
+            <label class="label text" for="gender">Gender</label>
+            <div>
+                <input type="checkbox" id="male" name="gender" value="Male">
+                <label class="text" for="male">Male</label>
+
+                <input type="checkbox" id="female" name="gender" value="Female">
+                <label class="text" for="female">Female</label>
+            </div>
+        </div>
+        <div class="row-content" style="margin-top: 30px;">
+            <label class="label text" for="department">Department</label>
+            <div>
+                <input type="checkbox" id="hr" name="department" value="HR">
+                <label class="text" for="hr">HR</label>
+
+                <input type="checkbox" id="sales" name="department" value="Sales">
+                <label class="text" for="sales">Sales</label>
+
+                <input type="checkbox" id="finance" name="department" value="Finance">
+                <label class="text" for="finance">Finance</label>
+
+                <input type="checkbox" id="engineer" name="department" value="Engineer">
+                <label class="text" for="engineer">Engineer</label>
+
+                <input type="checkbox" id="others" name="department" value="Others">
+                <label class="text" for="others">others</label>
+            </div>
+        </div>
+        <div class="row-content" style="margin-top: 30px;">
+            <label class="label text" for="salary">Salary</label>
+            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output text" for="salary">400000</output>
+        </div>
      
 </body>
 </html>
