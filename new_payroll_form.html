@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=firefox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS file/new_payroll_form.css">
+    <script defer src="../JS/EmployeePayroll.js"></script>
+    <script defer src="../JS/EmployeePayroll.js"></script>
     <title>Employee payroll form</title>
 </head>
 <!-- UC-1 -->
@@ -22,24 +24,25 @@
     </header>
 
     <!-- uc 2 -->
-    <div class="form-content">
+    <div id="formId" class="form-content">
         <form class="form" action="#" onsubmit="save();return false" >
             <div class="form-head">
                 Employee Payroll Form</div>
                 <div class="row-content">
-                    <label for="name" class="label text">Name</label>
+                    <label for="name" class="label text">Name :</label>
                     <input type="text" class="input" id="name" placeholder="Your name .." required>
+                    <error-output class="text-error" for="text"></error-output>  
                    
      </div>
 
-     <!-- uc 3 -->
+     <!-- uc 3 profile input fields -->
      <div class="row-content">
         <label for="profile" class="label text">Profile Image</label>
         <div class="profile-radio-content">
             <label>
                 <input type="radio" id="profile1" name="profile"
-                    value="../assets/profile-images/Ellipse -10.png">
-                <img class="profile" id="image1" src="../assets/profile-images/pic4.png">
+                    value="../assets/profile-images/Ellipse -1.png" required>
+                <img class="profile" id="image1" src="../assets/profile-images/ellipse-1.png">
             </label>
             <label>
                 <input type="radio" id="profile2" name="profile"
@@ -54,11 +57,11 @@
             <label>
                 <input type="radio" id="profile4" name="profile"
                     value="../assets/profile-images/Ellipse -3.png">
-                <img class="profile" id="image1" src="../assets/profile-images/img5.png">
+                <img class="profile" id="image1" src="../assets/profile-images/img4.jpg">
             </label>
         </div>
      </div>
-        <!-- uc 3 -->
+        <!-- uc 3 gender -->
         <div class="row-content" style="margin-top: 50px;">
             <label class="label text" for="gender">Gender</label>
             <div>
@@ -69,6 +72,8 @@
                 <label class="text" for="female">Female</label>
             </div>
         </div>
+
+        <!-- uc 5 department -->
         <div class="row-content" style="margin-top: 30px;">
             <label class="label text" for="department">Department</label>
             <div>
@@ -88,14 +93,16 @@
                 <label class="text" for="others">others</label>
             </div>
         </div>
+
+        <!-- ! salary -->
         <div class="row-content" style="margin-top: 30px;">
-            <label class="label text" for="salary">Salary</label>
+            <label class="label text" for="salary">Choose Salary :</label>
             <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
-        <!-- uc 4 -->
+        <!-- uc 4 start date -->
         <div class="row-content" style="margin-top: 30px;">
-            <label class="label text" for="date">Start Date</label>
+            <label class="label text" for="startdate">Start Date</label>
             <div>
                 <select id="day" name="Day">
                     <option>Day</option>
@@ -158,10 +165,22 @@
                 <error-output class="date-error" for="text"></error-output>
             </div>
             </div>
+            <!-- !...Note textbox -->
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
                 <textarea id="notes" name="notes" class="input" placeholder="" style="height: 100px;">
                </textarea>
             </div>
+            <!-- !.cancelButton -->
+            <div class="button-parent">
+                <a href="./new_payroll_form.html" class="resetButton button cancelButton">Cancel</a>
+                <!-- !...submitButton -->
+                <div class="submit-reset">
+                    <button class="button submitButton" type="submit">Submit</button>
+                    <button type="reset" class="button resetButton" id="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
