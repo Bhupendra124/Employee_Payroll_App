@@ -109,3 +109,32 @@ th{
     opacity: 1;
     border: 0px solid #dddddddd;
 }
+tr:first-child{
+    background-color: #ffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+td{
+    font: normal normal normal 14px/21px Rpboto;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    /* opacity: 1%; */
+}
+td:first-child{
+    display: flex;
+    align-items: center;
+}
+td img:first-child{
+    margin-right:10px
+}
+.dept-label{
+    background-color: #e9fea5;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 1px 7px;
+    text-align: center;
+    font-size:14px;
+    display:inline-block;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
